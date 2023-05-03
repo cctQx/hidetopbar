@@ -115,7 +115,7 @@ var Intellihide = class HideTopBar_Intellihide {
             this._checkOverlap.bind(this)
         ], [
             // update wne monitor changes, for instance in multimonitor when monitor are attached
-            Meta.MonitorManager.get(),
+            Convenience.getMonitorManager(),
             'monitors-changed',
             this._checkOverlap.bind(this)
         ]);
